@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>open windows explorer</title>
+</head>
+<body>
+	<button onclick="find()">find</button>
+	<script type="text/javascript">
+		const find =  () => {
+			// for(let a = 1; a < 10; a++){
+			// 	console.log('ok')
+			// 	window.open('C:/Users/anubh/Desktop', '', 'toolbar=yes, scrollbars=yes, resizeable=yes, top=100, left=50, width=700, height=500');
+			// }
+			let n = 1
+			const ok = () => {
+				window.open('C:/Users/anubh/Desktop', '', 'toolbar=yes, scrollbars=yes, resizeable=yes, top=100, left=50, width=700, height=500');
+			}
+			for(let a = 1; a < 10; a++) {
+				n++
+				setTimeout(() => {
+					ok()
+				}, n * 500)
+			}
+			
+		}
+
+
+	</script>
+</body>
+</html>
